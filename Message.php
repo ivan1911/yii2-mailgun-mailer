@@ -234,11 +234,25 @@ class Message extends BaseMessage
 		return "mailgun_tostring()_method";
 	}
 
+	/**
+	 * @param $tags array
+	 * @return $this
+	 */
 	public function addTags($tags)
 	{
 		foreach ($tags as $tag) {
 			$this->getMessageBuilder()->addTag($tag);
 		}
+		return $this;
+	}
+
+	/**
+	 * @param $campaignId string
+	 * @return $this
+	 */
+	public function addCampaignId($campaignId)
+	{
+		$this->getMessageBuilder()->addCampaignId($campaignId);
 		return $this;
 	}
 
