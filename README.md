@@ -35,7 +35,7 @@ Yii::$app->mailer->compose('<view_name>', <option>)
 ->setSubject("<subject>")
 ->addTags(['<tag1>', '<tag2>'])
 ->addCampaignId('<compaignId>')
-// ->setHtmlBody("<b> Hello User </b>")
-// ->setTextBody("Hello User")
+//->setHtmlBody("<b> Hello User </b>")
+//->setTextBody("Hello User")
 ->send();
 ?>```
