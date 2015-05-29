@@ -1,6 +1,6 @@
 <?php
 
-namespace katanyoo\mailgunmailer;
+namespace ivan1911\mailgunmailer;
 
 use Yii;
 use yii\base\InvalidConfigException;
