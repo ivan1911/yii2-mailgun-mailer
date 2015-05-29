@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist katanyoo/yii2-mailgun-mailer "*"
+php composer.phar require --prefer-dist ivan1911/yii2-mailgun-mailer "*"
 ```
 
 or add
 
 ```
-"katanyoo/yii2-mailgun-mailer": "*"
+"ivan1911/yii2-mailgun-mailer": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -33,6 +33,8 @@ Yii::$app->mailer->compose('<view_name>', <option>)
 ->setFrom("<from email>")
 ->setTo("<to email>")
 ->setSubject("<subject>")
+->addTags(['<tag1>', '<tag2>'])
+->addCampaignId('<compaignId>')
 // ->setHtmlBody("<b> Hello User </b>")
 // ->setTextBody("Hello User")
 ->send();
