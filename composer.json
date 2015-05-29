@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "katanyoo\\mailgunmailer\\": "",
+            "ivan1911\\mailgunmailer\\": "",
             "Mailgun\\": ""
         }
     },
